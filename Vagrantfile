@@ -84,12 +84,13 @@ Vagrant.configure(2) do |config|
      nvm use 5.7.1
      nvm alias default 5.7.1
      npm install -g npm
-     npm install -g gitbook
+     npm install -g gitbook-cli
      echo "export LC_ALL=en_US.UTF-8" >> /home/vagrant/.bashrc
      sudo echo "export LC_ALL=en_US.UTF-8" >> /etc/enviroment
      sudo echo "export LANG=en_US.UTF-8" >> /etc/enviroment
      sudo locale-gen zh_TW.UTF-8
      sudo locale-gen en_US.UTF-8
      sudo dpkg-reconfigure locales
+     gitbook fetch 2.6.7
    SHELL
 end
