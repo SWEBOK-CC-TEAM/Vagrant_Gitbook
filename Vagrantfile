@@ -87,5 +87,7 @@ Vagrant.configure(2) do |config|
      npm install -g gitbook
      echo "export LC_ALL=\"en_US.UTF-8\"" >> /home/vagrant/.bashrc
      source .bashrc
+     sudo locale-gen
+     echo "source ~/.bashrc" >> /home/vagrant/.bashrc
    SHELL
 end
